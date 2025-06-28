@@ -1,0 +1,9 @@
+.containers {
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+.class-bg {
+    background: #fb903f;
+    background: linear-gradient(341deg, rgba(251, 144, 63, 1) 0%, rgba(89, 51, 22, 1) 0%, rgba(79, 45, 20, 1) 0%, rgba(240, 104, 0, 1) 0%, rgba(145, 71, 25, 1) 29%, rgba(5, 5, 5, 1) 60%, rgba(0, 0, 0, 1) 66%);
+}
