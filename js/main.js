@@ -42,7 +42,7 @@ function renderProducts(arr, list) {
             <h2 class="font-bold text-[20px] line-clamp-1 mb-2">${item.title}</h2>
             <p class="font-semibold text-[15px] line-clamp-3 mb-2">${item.description}</p>
             <strong class="text-[20px] mb-3 inline-block">${item.price}$</strong>
-            <button onclick="handleOrder(${item.id})" class="w-full py-2 cursor-pointer hover:scale-[1.05] duration-300 rounded-md bg-green-600 font-semibold text-white">Order</button>
+            <button onclick="handleOrder(${item.id})" class="w-full class-bg py-2 cursor-pointer hover:scale-[1.05] duration-300 rounded-md font-semibold text-white">Order</button>
         `
         list.append(elItem)
     })
@@ -65,7 +65,7 @@ function handleOrder(id) {
                     <input required type="text" class="p-2 rounded-md font-semibold w-full outline-none shadow-md border-[1px]" placeholder="Enter Name" name="name"/>
                     <input required type="tel" class="p-2 rounded-md font-semibold w-full outline-none shadow-md border-[1px]" placeholder="Enter Phone number" name="phone"/>
                     <input required type="text" class="p-2 rounded-md font-semibold w-full outline-none shadow-md border-[1px]" placeholder="Enter Address" name="address"/>
-                    <button type="submit" class="w-full py-2 cursor-pointer hover:scale-[1.05] duration-300 rounded-md bg-green-600 font-semibold text-white">Order</button>
+                    <button type="submit" class="w-full py-2 cursor-pointer hover:scale-[1.05] duration-300 rounded-md class-bg font-semibold text-white">Order</button>
                 </form>
             </div>
         </div>
