@@ -56,7 +56,7 @@ function handleOrder(id) {
     axios(`${api}/${id}`).then(res => {
         modalInner.innerHTML = `
         <div class="sm:flex gap-[30px] ">
-            <img class="w-[250px] h-[300px] mx-auto sm:w-[300px] sm:h-[400px] mb-3 sm:mb-0" src="${res.data.image}" alt="img" width="200" height="300"/>
+            <img class="w-[150px] h-[200px] mx-auto sm:w-[300px] sm:h-[400px] mb-3 sm:mb-0" src="${res.data.image}" alt="img" width="200" height="300"/>
             <div class="w-[300px]">
                 <h2 class="font-bold text-[20px] line-clamp-1 mb-2">${res.data.title}</h2>
                 <p class="font-semiboldtext-[15px] line-clamp-3 mb-2">${res.data.description}</p>
