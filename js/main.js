@@ -57,15 +57,15 @@ function handleOrder(id) {
         modalInner.innerHTML = `
         <div class="sm:flex gap-[30px] ">
             <img class="w-[170px] h-[200px] mx-auto sm:w-[300px] sm:h-[400px] mb-3 sm:mb-0" src="${res.data.image}" alt="img" width="200" height="300"/>
-            <div class="w-[300px]">
+            <div class="w-[260px] sm:w-[300px]">
                 <h2 class="font-bold text-[20px] line-clamp-1 mb-2">${res.data.title}</h2>
-                <p class="font-semiboldtext-[15px] line-clamp-3 mb-2">${res.data.description}</p>
-                <strong class="text-[20px] mb-2 sm:mb-3 inline-block">${res.data.price} $</strong>
+                <p class="font-semibold text-[15px] line-clamp-3 mb-2">${res.data.description}</p>
+                <strong class="text-[18px] sm:text-[20px] mb-1 sm:mb-3 inline-block">${res.data.price} $</strong>
                 <form class="order-form space-y-2 sm:space-y-3" autocomplete="off">
-                    <input required type="text" class="p-2 rounded-md font-semibold w-full outline-none shadow-md border-[1px]" placeholder="Enter Name" name="name"/>
-                    <input required type="tel" class="p-2 rounded-md font-semibold w-full outline-none shadow-md border-[1px]" placeholder="Enter Phone number" name="phone"/>
-                    <input required type="text" class="p-2 rounded-md font-semibold w-full outline-none shadow-md border-[1px]" placeholder="Enter Address" name="address"/>
-                    <button type="submit" class="w-full py-2 cursor-pointer hover:scale-[1.05] duration-300 rounded-md class-bg font-semibold text-white">Order</button>
+                    <input required type="text" class="p-1 sm:p-2 rounded-md font-semibold w-full outline-none shadow-md border-[1px]" placeholder="Enter Name" name="name"/>
+                    <input required type="tel" class="p-1 sm:p-2 rounded-md font-semibold w-full outline-none shadow-md border-[1px]" placeholder="Enter Phone number" name="phone"/>
+                    <input required type="text" class="p-1 sm:p-2 rounded-md font-semibold w-full outline-none shadow-md border-[1px]" placeholder="Enter Address" name="address"/>
+                    <button type="submit" class="w-full py-1 sm:py-2 cursor-pointer hover:scale-[1.05] duration-300 rounded-md class-bg font-semibold text-white">Order</button>
                 </form>
             </div>
         </div>
